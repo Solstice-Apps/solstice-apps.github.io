@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redactly: share screenshots without sharing secrets</title>
+  <meta name="description" content="Redactly is a Chrome extension that finds emails, API keys, passwords and card numbers in your screenshots and hides them before you paste. Everything happens on your device." />
+  <meta property="og:title" content="Redactly: share screenshots without sharing secrets" />
+  <meta property="og:description" content="Capture a page or paste any screenshot. Sensitive info is hidden automatically, right on your device." />
+  <meta property="og:image" content="https://solstice-apps.github.io/redactly/img/after.png" />
+  <link rel="icon" href="img/icon-32.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="logo" href="#top"><img src="img/icon-32.png" alt="" width="28" height="28" />Redactly</a>
+      <nav aria-label="Page">
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a class="btn btn-primary btn-small" href="https://chromewebstore.google.com/search/Redactly">Add to Chrome</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero wrap">
+      <h1>Share screenshots without sharing secrets</h1>
+      <p class="lede">Redactly finds emails, API keys, passwords and card numbers in your screenshots and hides them before you paste. It all happens on your computer.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://chromewebstore.google.com/search/Redactly">Add to Chrome, free</a>
+        <a class="btn btn-quiet" href="#pricing">See pricing</a>
+      </div>
+      <p class="fine">Works in Chrome, Edge and Brave. No account needed.</p>
+
+      <div class="compare" id="compare" style="--split: 100%" role="group" aria-label="Before and after Redactly">
+        <img src="img/before.png" alt="A terminal showing passwords, API keys, emails and IP addresses in plain text" width="1100" height="483" />
+        <div class="after" aria-hidden="true"><img src="img/after.png" alt="" width="1100" height="483" /></div>
+        <div class="handle" id="handle" role="slider" tabindex="0" aria-label="Drag to compare" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"></div>
+      </div>
+      <div class="compare-labels"><span>Before</span><span>After Redactly</span></div>
+    </div>
+
+    <section id="how">
+      <div class="wrap">
+        <h2>Three keystrokes, nothing leaked</h2>
+        <p class="sub">Redactly fits into how you already share: take the screenshot, check it, paste it.</p>
+        <ol class="steps">
+          <li>
+            <h3>Capture</h3>
+            <p>Press <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>R</kbd> on any page, or paste a screenshot from any app: a terminal, Slack, a remote desktop.</p>
+          </li>
+          <li>
+            <h3>Check</h3>
+            <p>Everything sensitive is already hidden. Switch an item back on, or drag over anything else you want covered.</p>
+          </li>
+          <li>
+            <h3>Paste</h3>
+            <p>Press <kbd>Enter</kbd> to copy the clean image, then paste it into a ticket, a chat or a doc.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>What Redactly hides</h2>
+        <p class="sub">Built by someone in cybersecurity, so it catches the things that actually get leaked in screenshots.</p>
+        <div class="kinds">
+          <div class="kind">
+            <h3>Everyday personal info</h3>
+            <p>Free, hidden automatically</p>
+            <ul>
+              <li>Email addresses</li>
+              <li>Phone numbers</li>
+              <li>Card numbers</li>
+              <li>IP addresses</li>
+              <li>Password fields</li>
+            </ul>
+          </div>
+          <div class="kind">
+            <h3>Security secrets</h3>
+            <p>Pro, hidden automatically</p>
+            <ul>
+              <li>API keys (AWS, GitHub, Stripe, Slack, OpenAI…)</li>
+              <li>Passwords in text</li>
+              <li>Database passwords</li>
+              <li>Login and auth tokens</li>
+              <li>Private keys</li>
+              <li>Social Security numbers</li>
+              <li>Your own words, like client names</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="wrap privacy">
+        <div>
+          <h2>Your screenshots never leave your computer</h2>
+          <p class="sub">A tool for hiding secrets shouldn't collect them. Redactly reads text on your device, and nothing you capture is uploaded, stored or seen by anyone else.</p>
+          <a href="privacy.html">Read the privacy policy</a>
+        </div>
+        <ul class="facts">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <div><strong>No uploads</strong><span>Text recognition runs inside the extension.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="m3 3 18 18"/></svg>
+            <div><strong>No account, no tracking</strong><span>No sign-up, no analytics, no ads.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3"/></svg>
+            <div><strong>Only your license key</strong><span>Pro checks its key with our payment provider. That's all that's ever sent.</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pricing" class="alt">
+      <div class="wrap">
+        <h2>Simple pricing</h2>
+        <p class="sub">Start free. Upgrade when you need security secrets hidden automatically.</p>
+        <div class="plans">
+          <div class="plan">
+            <h3>Free</h3>
+            <div class="price">$0</div>
+            <p class="note">For everyday screenshots.</p>
+            <ul>
+              <li>Hides emails, phones, cards and IPs</li>
+              <li>Flags API keys and passwords for you to hide</li>
+              <li>3 pasted screenshots a day</li>
+              <li class="no">Small "Redacted with Redactly" corner credit</li>
+            </ul>
+            <a class="btn btn-quiet" href="https://chromewebstore.google.com/search/Redactly">Add to Chrome</a>
+          </div>
+          <div class="plan">
+            <h3>Pro monthly</h3>
+            <div class="price">$1.99 <small>/ month</small></div>
+            <p class="note">Cancel anytime.</p>
+            <ul>
+              <li>Everything in Free</li>
+              <li>Hides API keys, passwords and tokens automatically</li>
+              <li>Unlimited screenshots</li>
+              <li>Always-hide your own words</li>
+              <li>No corner credit</li>
+            </ul>
+            <a class="btn btn-quiet" href="https://buy.polar.sh/polar_cl_VjYL27GmK4LmZKvQpatHgOPj1WJ8j5FvRz7Zo2G9ZIa">Get Pro monthly</a>
+          </div>
+          <div class="plan best">
+            <h3>Pro lifetime <span class="tag">Best value</span></h3>
+            <div class="price">$14.99 <small>once</small></div>
+            <p class="note">Pay once, keep it forever. Less than 8 months of monthly.</p>
+            <ul>
+              <li>Everything in Pro monthly</li>
+              <li>All future updates</li>
+            </ul>
+            <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_7uuHvDUKn8kvxas7OPU20dwYt29IENxFuUnLh2O2kCe">Get Pro lifetime</a>
+          </div>
+        </div>
+        <p class="fine">After buying, you'll get a license key by email. Paste it into Redactly under Settings, then Redactly Pro.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap faq">
+        <h2>Questions</h2>
+        <details>
+          <summary>Does Redactly upload my screenshots?</summary>
+          <p>No. Screenshots and page text are processed inside the extension on your computer and are never sent anywhere. The only network request Redactly makes is checking a Pro license key with Polar, our payment provider.</p>
+        </details>
+        <details>
+          <summary>Can it redact screenshots from other apps?</summary>
+          <p>Yes. Take a screenshot with your system's shortcut, open Redactly and paste it. It reads the text in the image and hides what it finds. That works for terminals, chat apps, remote desktops and anything else on screen.</p>
+        </details>
+        <details>
+          <summary>Will it catch everything?</summary>
+          <p>It catches the common kinds of sensitive data reliably, and you always review the result before copying. Text in pasted images is read with on-device text recognition, so very small or blurry text can be missed. Drag over anything you want covered.</p>
+        </details>
+        <details>
+          <summary>Which browsers does it work in?</summary>
+          <p>Chrome, plus Chromium browsers that install from the Chrome Web Store, like Edge and Brave. Versions for other browsers are planned.</p>
+        </details>
+        <details>
+          <summary>How do I manage or cancel Pro?</summary>
+          <p>Use the link in your purchase email, or <a href="https://polar.sh/solsticeapps/portal">the customer portal</a>. Monthly plans can be canceled anytime and stay active until the end of the period.</p>
+        </details>
+        <details>
+          <summary>How do I get help?</summary>
+          <p>Email <a href="mailto:solsticeapps@proton.me">solsticeapps@proton.me</a> and we'll get back to you.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Solstice Apps</span>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="mailto:solsticeapps@proton.me">Support</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Before/after slider. On load, a single sweep reveals the redacted version once.
+    (() => {
+      const box = document.getElementById("compare");
+      const handle = document.getElementById("handle");
+      const set = (pct) => {
+        pct = Math.max(0, Math.min(100, pct));
+        box.style.setProperty("--split", pct + "%");
+        handle.setAttribute("aria-valuenow", Math.round(pct));
+      };
+      const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let touched = false;
+      if (reduce) set(12);
+      else {
+        const io = new IntersectionObserver((entries) => {
+          if (!entries[0].isIntersecting) return;
+          io.disconnect();
+          const start = performance.now(), dur = 1600;
+          const tick = (t) => {
+            if (touched) return;
+            const k = Math.min(1, (t - start) / dur);
+            const e = 1 - Math.pow(1 - k, 3);
+            set(100 - e * 88); // sweep almost all the way: show the redacted result
+            if (k < 1) requestAnimationFrame(tick);
+          };
+          setTimeout(() => requestAnimationFrame(tick), 500);
+        }, { threshold: 0.4 });
+        io.observe(box);
+      }
+      const fromEvent = (e) => {
+        const r = box.getBoundingClientRect();
+        set(((e.clientX - r.left) / r.width) * 100);
+      };
+      box.addEventListener("pointerdown", (e) => { touched = true; box.setPointerCapture(e.pointerId); fromEvent(e); });
+      box.addEventListener("pointermove", (e) => { if (box.hasPointerCapture(e.pointerId)) fromEvent(e); });
+      handle.addEventListener("keydown", (e) => {
+        const cur = parseFloat(getComputedStyle(box).getPropertyValue("--split")) || 50;
+        if (e.key === "ArrowLeft") { touched = true; set(cur - 5); e.preventDefault(); }
+        if (e.key === "ArrowRight") { touched = true; set(cur + 5); e.preventDefault(); }
+      });
+    })();
+  </script>
+</body>
+</html>
